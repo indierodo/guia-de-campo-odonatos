@@ -18,10 +18,26 @@
         color: #38488f;
     }
 
+
     a:hover {
       color: #1a2d41;
       text-decoration: none;
     }
+
+    ol {
+      padding-inline-start: 40px;
+    }
+
+    ol .beta  {
+      list-style-type: lower-alpha;
+      padding-inline-start: 1.5em;
+    }
+
+    ol .gamma  {
+      list-style-type: lower-roman;
+      padding-inline-start: 1.5em;
+    }
+
   </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -38,7 +54,7 @@
 <body>
 
   <div class="container-fluid">
-    <div class="row m-4">
+    <div class="row my-4 mx-1">
       <h3>Guía de campo para Odonatos de Campus Sur</h3>
     </div>
 
@@ -141,33 +157,46 @@
       </div>
 
       <div class="col-lg-3">
-        <ol>
+        <ol class="alpha">
           <li><a href="#" onclick="showSlide(0)">Portada</a></li>
+          
           <li><a href="#" onclick="showSlide(1)">Zygoptera</a></li>
-          <li><a href="#" onclick="showSlide(2)">Familia Lestidae</a></li>
-          <li><a href="#" onclick="showSlide(3)">Lestes alacer</a></li>
-          <li><a href="#" onclick="showSlide(4)">Familia Coenagrionidae</a></li>
-          <li><a href="#" onclick="showSlide(5)">Enallagma civile</a></li>
-          <li><a href="#" onclick="showSlide(6)">Enallagma praevarum</a></li>
-          <li><a href="#" onclick="showSlide(7)">Ischnura demorsa</a></li>
-          <li><a href="#" onclick="showSlide(8)">Ischnura ramburii</a></li>
-          <li><a href="#" onclick="showSlide(9)">Telebasis salva</a></li>
+          <ol class="beta">
+            <li><a href="#" onclick="showSlide(2)">Familia Lestidae</a></li>
+            <ol class="gamma">
+              <li><a href="#" onclick="showSlide(3)">Lestes alacer</a></li>
+            </ol>
+
+            <li><a href="#" onclick="showSlide(4)">Familia Coenagrionidae</a></li>
+            <ol class="gamma">
+              <li><a href="#" onclick="showSlide(5)">Enallagma civile</a></li>
+              <li><a href="#" onclick="showSlide(6)">Enallagma praevarum</a></li>
+              <li><a href="#" onclick="showSlide(7)">Ischnura demorsa</a></li>
+              <li><a href="#" onclick="showSlide(8)">Ischnura ramburii</a></li>
+              <li><a href="#" onclick="showSlide(9)">Telebasis salva</a></li>
+            </ol>
+          </ol>
+
           <li><a href="#" onclick="showSlide(10)">Anisoptera</a></li>
-          <li><a href="#" onclick="showSlide(11)">Familia Aeshnidae</a></li>
-          <li><a href="#" onclick="showSlide(12)">Anax junius</a></li>
-          <li><a href="#" onclick="showSlide(13)">Rhionaeschna multicolor</a></li>
-          <li><a href="#" onclick="showSlide(14)">Familia Libellulidae</a></li>
-          <li><a href="#" onclick="showSlide(15)">Brachymesia furcata</a></li>
-          <li><a href="#" onclick="showSlide(16)">Erythrodiplax basifusca</a></li>
-          <li><a href="#" onclick="showSlide(17)">Libellula saturata</a></li>
-          <li><a href="#" onclick="showSlide(18)">Micrathyria hagenii</a></li>
-          <li><a href="#" onclick="showSlide(19)">Pachydiplax longipennis</a></li>
-          <li><a href="#" onclick="showSlide(20)">Pantala flavescens</a></li>
-          <li><a href="#" onclick="showSlide(21)">Perithemis intensa</a></li>
-          <li><a href="#" onclick="showSlide(22)">Sympetrum corruptum</a></li>
-          <li><a href="#" onclick="showSlide(23)">Sympetrum illotum</a></li>
-          <li><a href="#" onclick="showSlide(24)">Tramea insularis</a></li>
-          <li><a href="#" onclick="showSlide(25)">Tramea onusta</a></li>
+          <ol class="beta">
+            <li><a href="#" onclick="showSlide(11)">Familia Aeshnidae</a></li>
+            <ol class="gamma">
+              <li><a href="#" onclick="showSlide(12)">Anax junius</a></li>
+              <li><a href="#" onclick="showSlide(13)">Rhionaeschna multicolor</a></li>
+              <li><a href="#" onclick="showSlide(14)">Familia Libellulidae</a></li>
+              <li><a href="#" onclick="showSlide(15)">Brachymesia furcata</a></li>
+              <li><a href="#" onclick="showSlide(16)">Erythrodiplax basifusca</a></li>
+              <li><a href="#" onclick="showSlide(17)">Libellula saturata</a></li>
+              <li><a href="#" onclick="showSlide(18)">Micrathyria hagenii</a></li>
+              <li><a href="#" onclick="showSlide(19)">Pachydiplax longipennis</a></li>
+              <li><a href="#" onclick="showSlide(20)">Pantala flavescens</a></li>
+              <li><a href="#" onclick="showSlide(21)">Perithemis intensa</a></li>
+              <li><a href="#" onclick="showSlide(22)">Sympetrum corruptum</a></li>
+              <li><a href="#" onclick="showSlide(23)">Sympetrum illotum</a></li>
+              <li><a href="#" onclick="showSlide(24)">Tramea insularis</a></li>
+              <li><a href="#" onclick="showSlide(25)">Tramea onusta</a></li>
+            </ol>
+          </ol>
           <li><a href="#" onclick="showSlide(26)">Referencias y créditos de fotografías</a></li>
         </ol>
       </div>
